@@ -53,6 +53,7 @@ email=carlos%40ginandjuice.shop&csrf=FbRPm2l03nO7Kv9mTSdDGal0fFDCPCtH'''
     for i in range(8):
         engine.queue(req1, gate='race1')
         engine.queue(req2, gate='race1')
+        #send both email reset requests at the same time, staggered
         
     #engine.openGate('race0')
     engine.openGate('race1')
